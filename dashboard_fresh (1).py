@@ -72,7 +72,7 @@ st.markdown("""
 @st.cache_data
 def load_all_stations():
     try:
-        df = pd.read_csv("/mnt/user-data/outputs/10_AWS_stations_combined.csv")
+       df = pd.read_csv("10_AWS_stations_combined.csv")
         return df
     except:
         st.error("Data file not found")
